@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/frontend/src/css/index.css">
+    <title>Sistema de Notas</title>
+</head>
+<body>
+    <main>
+        <div class="header">
+            <div>
+                <h1>Sistema de Notas</h1>
+
+            </div>
+            <div>
+                <input type="text" id="searchInput" placeholder="Buscar por nome ou disciplina...">
+                <button onclick="adicionarNota()">Adicionar Nota</button>
+            </div>
+            
+        </div>
+        <div id="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome do Aluno</th>
+                            <th>Disciplina</th>
+                            <th>Nota</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela">
+                        <!-- As notas serão inseridas aqui dinamicamente -->
+                    </tbody>
+                </table>
+        </div>
+
+        <div id="card" class="adicionarNota">
+            <form id="form">
+                <input type="text" placeholder="Nome do Aluno" id="nome">
+                <select name="disciplina" id="disciplina">
+                    <option value="">Selecione uma disciplina</option>
+                    <option value="Matemática">Matemática</option>
+                    <option value="Português">Português</option>
+                    <option value="Ciências">Ciências</option>
+                    <option value="História">História</option>
+                    <option value="Geografia">Geografia</option>
+
+                </select>
+                <input type="number" placeholder="Nota" min="0" max="10" id="nota">
+                <button type="submit">Adicionar</button>
+                <button type="button" onclick="fecharNota   ()">Fechar</button>
+            </form>
+        </div>
+    </main>
+    <script src="/frontend/src/js/index.js"></script>
+</body>
+</html>
