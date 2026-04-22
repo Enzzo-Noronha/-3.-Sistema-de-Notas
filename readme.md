@@ -19,4 +19,7 @@ Aplicação para criar e gerenciar notas com persistência em banco de dados.
 ```bash
 git clone <https://github.com/Enzzo-Noronha/-3.-Sistema-de-Notas.git>
 cd backend
-n
+npm install
+node server.js"# -3.-Sistema-de-Notas" 
+"# -3.-Sistema-de-Notas" 
+"# -3.-Sistema-de-Notas" 
